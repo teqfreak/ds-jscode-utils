@@ -1,0 +1,29 @@
+{
+  "name": "ds-jscode-utils",
+  "version": "0.0.2",
+  "description": "Simple javascript library with common utilities",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "rm -Rfv ./lib && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copypackage": "cp -rf package.json lib",
+    "push": "npm run build && npm run copypackage && cd lib && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teqfreak/ds-jscode-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teqfreak/ds-jscode-utils/issues"
+  },
+  "homepage": "https://github.com/teqfreak/ds-jscode-utils#readme",
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^4.5.4"
+  }
+}
